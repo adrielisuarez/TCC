@@ -1,0 +1,144 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow:
+    0 15px 25px rgba(0,0,0,0.1),
+    0 5px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #4a148c;
+  text-align: center;
+  text-shadow: 0 3px 6px rgba(74,20,140,0.3);
+  letter-spacing: 1.2px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #3c1361;
+  user-select: none;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 15px 18px;
+  border: 2.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  background-color: #fafafa;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+  border-color: #7b1fa2;
+  background-color: #f3e5f5;
+  outline: none;
+}
+
+button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 18px 0;
+  background: linear-gradient(45deg, #7b1fa2, #4a148c);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow:
+    0 6px 15px rgba(123,31,162,0.6);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  user-select: none;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #4a148c, #7b1fa2);
+  box-shadow:
+    0 8px 20px rgba(74,20,140,0.8);
+  transform: translateY(-3px);
+}
+
+h2 {
+  margin-top: 45px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  text-shadow: 0 2px 4px #a5d6a7;
+  user-select: none;
+}
+
+/* Mobile Responsivo */
+@media (max-width: 520px) {
+  .container {
+    padding: 30px 25px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 14px 0;
+    border-radius: 12px;
+  }
+}
+
+h2.low {
+  color: #e74c3c; /* vermelho */
+  text-shadow: 0 2px 4px #f1948a;
+}
+
+h2.medium {
+  color: #f1c40f; /* amarelo */
+  text-shadow: 0 2px 4px #f9e79f;
+}
+
+h2.high {
+  color: #2e7d32; /* verde (já no seu padrão) */
+  text-shadow: 0 2px 4px #a5d6a7;
+}

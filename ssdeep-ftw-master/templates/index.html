@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparação de Arquivos (SSDEEP)</title>
+</head>
+<body>
+    <h2>Upload de arquivos para comparação</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="files" multiple required>
+        <button type="submit">Comparar</button>
+    </form>
+
+    {% if resultados %}
+        <h3>Resultados da comparação:</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Arquivo 1</th>
+                <th>Arquivo 2</th>
+                <th>Similaridade (%)</th>
+            </tr>
+            {% for arq1, arq2, sim in resultados %}
+            <tr>
+                <td>{{ arq1 }}</td>
+                <td>{{ arq2 }}</td>
+                <td>{{ sim }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>

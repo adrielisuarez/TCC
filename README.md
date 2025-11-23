@@ -1,6 +1,7 @@
 # TCC - ANÁLISE FORENSE DIGITAL COM FOCO EM MANIPULAÇÃO DE DADOS
 
-Script's usandos no TCC para alteração de bits em teste de similaridade entre arquivos
+Script's usandos no TCC para alteração de bits em teste de similaridade entre arquivos.
+Algoritmos de SDHASH, SSDEEP e TLSH
 
 RESUMO
 

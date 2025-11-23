@@ -1,8 +1,9 @@
-# TCC - ANÁLISE FORENSE DIGITAL COM FOCO EM MANIPULAÇÃO DE
-DADOS
+# TCC - ANÁLISE FORENSE DIGITAL COM FOCO EM MANIPULAÇÃO DE DADOS
+
 Script's usandos no TCC para alteração de bits em teste de similaridade entre arquivos
 
 RESUMO
+
 Atualmente as investigações forenses na área digital têm de lidar com grandes
 volumes de dados, tornando sua análise manual inviável. Este trabalho visa à compreensão do
 funcionamento dos métodos de análise digital forense com foco na manipulação de dados. A
